@@ -3,7 +3,7 @@
 
 ## What is this?
 
-This a boilerplate for a SPA Admin application with Laravel 5.6, VueJS, CoreUI and JWT authentication (hope it can save up some time for someone who's developing a project like that).
+This is a boilerplate for a SPA Admin application with Laravel 5.6, VueJS, CoreUI and JWT authentication (hope it can save up some time for someone who's developing a project like that).
 It's using following open sources:
 - [laravel-coreui-vue](https://github.com/Braunson/laravel-coreui-vue)
 - [tymon/jwt-auth](https://github.com/tymondesigns/jwt-auth)
@@ -30,6 +30,10 @@ npm run dev
 php artisan serve
 
 ```
+### Testing users:
+- admin@test.com / 123456
+- moderator@test.com / 123456
+- user@test.com /123456
 
 
 ## License
