@@ -8,6 +8,7 @@ It's using following open sources:
 - [laravel-coreui-vue](https://github.com/Braunson/laravel-coreui-vue)
 - [tymon/jwt-auth](https://github.com/tymondesigns/jwt-auth)
 - [websanova/vue-auth](https://github.com/websanova/vue-auth)
+- [laravel-permission](https://github.com/spatie/laravel-permission)
 
 
 ## What have been implemented:
@@ -15,6 +16,7 @@ It's using following open sources:
 - integrated Laravel 5.6 with [tymon/jwt-auth](https://github.com/tymondesigns/jwt-auth). There are some small problems when integrate with this library, so I have used the branch 'develop'.
 - integrated [websanova/vue-auth](https://github.com/websanova/vue-auth) with the current [laravel-coreui-vue](https://github.com/Braunson/laravel-coreui-vue), now it can authenticate users from Laravel backend, and authorize on each Vue routes.
 - upgrade BootstrapVue to the latest version, fixed some issues during migration.
+- integrated [laravel-permission](https://github.com/spatie/laravel-permission) to manage roles & permissions in the backend 
 
 
 ## Getting Started
@@ -30,10 +32,11 @@ npm run dev
 php artisan serve
 
 ```
-### Testing users:
+### Data for testing:
+
 - admin@test.com / 123456
 - moderator@test.com / 123456
-- user@test.com /123456
+- user@test.com / 123456
 
 
 ## License
