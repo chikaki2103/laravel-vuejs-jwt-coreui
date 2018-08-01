@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Transformer\UserTransformer;
 
 class UserController extends Controller
 {
@@ -15,6 +16,6 @@ class UserController extends Controller
 
     public function getUsers()
     {
-        return User::all();
+        return fractal(User::all(), new UserTransformer())->respond();
     }
 }
