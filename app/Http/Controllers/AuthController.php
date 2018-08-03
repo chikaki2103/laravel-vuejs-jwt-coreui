@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use App\Transformer\UserTransformer;
 
 class AuthController extends Controller
 {
@@ -43,10 +44,7 @@ class AuthController extends Controller
      */
     public function user()
     {
-        return response([
-            'status' => 'success',
-            'data' => auth()->user()
-        ]);
+        return fractal(auth()->user(), new UserTransformer())->respond();
     }
 
     /**

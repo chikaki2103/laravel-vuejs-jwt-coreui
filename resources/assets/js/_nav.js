@@ -11,6 +11,22 @@ export default {
     },
     {
       title: true,
+      name: 'Management'
+    },
+    {
+      name: 'Users Management',
+      url: '/users',
+      icon: 'icon-people',
+      roles: ['administrator']
+    },
+    {
+      name: 'Articles Management',
+      url: '/articles',
+      icon: 'icon-docs',
+      roles: ['administrator', 'moderator']
+    },
+    {
+      title: true,
       name: 'UI elements'
     },
     {

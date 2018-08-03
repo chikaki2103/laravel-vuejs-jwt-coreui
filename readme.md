@@ -14,10 +14,14 @@ It's using following open sources:
 
 ## What have been implemented:
 
-- integrated Laravel 5.6 with [tymon/jwt-auth](https://github.com/tymondesigns/jwt-auth). There are some small problems when integrate with this library, so I have used the branch 'develop'.
+- integrated Laravel 5.6 with [tymon/jwt-auth](https://github.com/tymondesigns/jwt-auth). There are some small problems when integrate with this library, so I have to use the branch 'develop'.
 - integrated [websanova/vue-auth](https://github.com/websanova/vue-auth) with the current [laravel-coreui-vue](https://github.com/Braunson/laravel-coreui-vue), now it can authenticate users from Laravel backend, and authorize on each Vue routes.
-- upgrade BootstrapVue to the latest version, fixed some issues during migration.
-- integrated [laravel-permission](https://github.com/spatie/laravel-permission) to manage roles & permissions in the backend
+- upgraded BootstrapVue to the latest version, fixed some issues during migration.
+- integrated [laravel-permission](https://github.com/spatie/laravel-permission) to manage roles & permissions in the backend.
+- integrated [vuex](https://vuex.vuejs.org/). Oh, I like the idea of Flux!
+- created some simple APIs in the backend to get test data (Users, Articles).
+- created some simple pages in the frontend to display test data. That is to demonstrate how to use vue-auth.
+- updated the SideBar.vue & nav.js to display each menu item based on user' roles.
 
 
 ## Getting Started

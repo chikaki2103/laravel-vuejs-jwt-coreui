@@ -30,7 +30,7 @@
               </SidebarNavDropdown>
             </template>
             <template v-else>
-              <SidebarNavLink :name="item.name" :url="item.url" :icon="item.icon" :badge="item.badge"/>
+              <SidebarNavLink :name="item.name" :url="item.url" :icon="item.icon" :badge="item.badge" v-if="$auth.check(item.roles)"/>
             </template>
           </template>
         </li>

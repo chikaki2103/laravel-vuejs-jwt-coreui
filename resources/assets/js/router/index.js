@@ -28,6 +28,10 @@ import Page500 from '@/views/pages/Page500'
 import Login from '@/containers/Login'
 import Register from '@/views/pages/Register'
 
+// Logic
+import UsersList from '@/containers/UsersList'
+import ArticlesList from '@/containers/ArticlesList'
+
 Vue.use(Router)
 
 export default new Router({
@@ -46,6 +50,16 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: Dashboard
+        },
+        {
+          path: '/users',
+          name: 'UsersList',
+          component: UsersList
+        },
+        {
+          path: '/articles',
+          name: 'ArticlesList',
+          component: ArticlesList
         },
         {
           path: 'charts',
@@ -158,6 +172,6 @@ export default new Router({
       path: '/login',
       name: 'LoginPage',
       component: Login
-    },
+    }
   ]
 })
